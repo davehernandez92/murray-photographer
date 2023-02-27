@@ -1,0 +1,261 @@
+
+.heading {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 16vh;
+    margin-bottom: 6rem;
+}
+.headingImg{
+    height: 350px;
+    width: auto;
+    
+}
+.heading__wrapper p {
+    display: none;
+}
+.heading__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.heading__title{
+    font-weight: 500;
+    
+
+}
+.heading__title:nth-of-type(2) {
+    margin-left: 1rem;
+}
+
+.portfolio__container{
+    width: min(95%, 120rem);
+    margin: 3rem auto;
+    
+}
+
+.portfolio__heading{
+    font-size: 4.7rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+.portfolio__span {
+    margin-top: -25px;
+    font-size: 4.7rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+
+
+.portfolio__text{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    word-spacing: 3px;
+    line-height: 1.8;
+}
+
+.portfolio__img{
+    width: 100%;
+}
+
+.portfolio__btn{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #161615;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block  ; 
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(1.2rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    max-width: 12rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.portfolio__btn:focus {
+  background-color: #eeebea;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: var(--dark-grey);
+  border: .5px solid var(--dark-grey);
+}
+.portfolio__btn:hover {
+    background-color: #eeebea;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: var(--dark-grey);
+    border: .5px solid var(--dark-grey);
+}
+
+.portfolio__btn a {
+    color: white;
+}
+.portfolio__btn a:hover {
+    color: var(--black);
+}
+
+
+
+.portfolio__divider {
+    width: 100%;
+    height: 0.6px;
+    display: block;
+    margin-top: 6rem;
+    background-color: #37363659;
+  }
+.portfolio__instagram {
+    width: 99vw;
+    margin: 0 auto;
+}
+.portfolio__instagram h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+.instagram__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.instagram__img:nth-child(n+3){
+    display: none;
+}
+.instagram__link{
+    position: absolute;
+    bottom: 45%;
+    left: 18%;
+}   
+.instagram__link a {
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+
+.heading {
+        position: relative;
+        height: 29em;
+        top: 7vw;
+        margin-top: 2vh;
+       
+}
+    
+
+.headingImg{
+    display: unset;
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    height: 650px;
+    height: auto;
+    left: 0;
+    
+}
+
+.heading__wrapper{
+    display: unset;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    height: 100%;
+}
+
+.heading__title {
+  font-size: 7rem;
+  font-weight: 500;
+  padding-top: 2rem;
+  color: var(--dark-grey);
+  font-family: var(--heading-font);
+}
+.heading__title:nth-of-type(2) {
+    margin: -6rem 0 2rem 0;
+    
+}
+
+.heading__wrapper p {
+    display: block;
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 15% 0 0 0;
+}
+.portfolio__wrapper{
+    padding: 0 2.5rem 0 0;
+
+}
+.portfolio__heading{
+    margin: 0;
+}
+.portfolio__span{
+    margin-bottom: 4.2rem;
+}
+
+.portfolio__btn{
+    padding: 1.5rem 20px;
+    font-size: 1.9rem;
+    display: inline-block;
+    max-width: 18rem;
+
+}
+
+
+.portfolio__instagram {
+    width: 99vw;
+    margin: 0 auto;
+}
+.portfolio__instagram h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.instagram__wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.instagram__img:nth-child(n+3){
+    display: unset;
+}
+.instagram__link{
+    width: 20%;
+    height: 20%;
+    border: 2px solid var(--primary);
+    bottom: 45%;
+    left: 40%;
+    right: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}   
+.instagram__link a {
+    color: var(--white);
+    font-size: 2.3rem;
+}
+.instagram__link:hover{
+    border-color: #fff;
+    transform: scale(1.05);
+}
+
+}
